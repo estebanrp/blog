@@ -3,19 +3,13 @@
   "version": "1.0.0",
   "description": "blog",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/estebanrp/blog.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/estebanrp/blog/issues"
-  },
-  "homepage": "https://github.com/estebanrp/blog#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
