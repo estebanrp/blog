@@ -1,13 +1,8 @@
-import { inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const inter = inter({ subset: ["latin"]});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin']});
 
 export const metadata = {
   title: "Blog",
@@ -19,7 +14,7 @@ export default function RootLayout({ children }) {
     <header>
       <Link href={'/'}>
         <h1>
-          Blog of Estevan
+          Blog of Esteban
         </h1>
       </Link>
     </header> 
@@ -27,13 +22,13 @@ export default function RootLayout({ children }) {
   
   let footer = (
     <footer>
-      footer
+      <h5>Esteban Planas 2025</h5>
     </footer>
   )
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={inter.className}>
         {header}
         {children}
         {footer}
